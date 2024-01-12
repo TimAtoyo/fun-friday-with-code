@@ -6,7 +6,7 @@ var str = "Detartrated";
 function reverseString(str) {
   // Your code here
   var splitWords = str.split("").toReversed().join("").toLowerCase();
-    console.log(splitWords);
+  console.log(splitWords);
   return splitWords;
 }
 
@@ -16,27 +16,17 @@ function reverseString(str) {
 
 function isPalindrome(str) {
   // Your code here
-
   var reversedString = reverseString(str);
-  //   If the characters left to right equal
-  //   characters right to left then its a palendrome
 
-  for (let i = 0; i < str.length; i++) {
-            var charAt = str[i];
-            for (let j = 0; j < reversedString.length; j++) {
-               
-                var charAtReversed = reversedString[i];
-                if (charAt === charAtReversed) {
-                    console.log(`Yay this character is on the reversed string`);
-                }else {
-                    console.log(`Noooooooo`);
-                }
-            }
+  if (reversedString === str.toLowerCase()) {
+    console.log(`Is a palendrome my gy`);
+  } else {
+    console.log(`Is Not a palendrome my gy`);
   }
 }
+isPalindrome(str);
 
-// isPalindrome(str);
-//     FizzBuzz: Write a program that prints the numbers from 1 to 100. But for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz." For numbers that are multiples of both 3 and 5, print "FizzBuzz."
+// FizzBuzz: Write a program that prints the numbers from 1 to 100. But for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz." For numbers that are multiples of both 3 and 5, print "FizzBuzz."
 
 //     function fizzBuzz() {
 //       // Your code here
